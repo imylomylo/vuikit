@@ -36,7 +36,7 @@ export default {
     activePage: {
       get () {
         const activeEl = this.$el.querySelector('li.uk-active')
-        return this.active || activeEl && parseInt(activeEl.innerText.trim())
+        return this.active || (activeEl && activeEl.innerText) && parseInt(activeEl.innerText.trim())
       },
       cache: false
     },
@@ -56,7 +56,7 @@ export default {
       const activeEl = this.$el.querySelector('li.uk-active')
       if (activeEl) {
         return toArray(this.$el.querySelectorAll('a'))
-          .filter(el => !el.querySelector('span'))
+          .filter(el => !el.querySelector('span') && el.innerText)
           .map(el => parseInt(el.innerText.trim()))
       } else {
         return paginationMatrix({ active: this.active, total: this.total, limit: this.limit })
@@ -67,10 +67,10 @@ export default {
     }
   },
   updated () {
-    this.setPrevNextState()
+    this.updatePrevNextState()
   },
   mounted () {
-    this.setPrevNextState()
+    this.updatePrevNextState()
     // warn about missing props if 'vk-pagination-pages' is missing
     const activeEl = this.$el.querySelector('li.uk-active')
     if (warn && !activeEl && (!this.limit || !this.active || !this.total)) {
@@ -83,9 +83,9 @@ export default {
      * is the context and not the usual parent, we don't have the expected
      * parent/child relation. Thus, forced to do this kind of workarounds
      */
-    setPrevNextState () {
-      const prev = this.$el.querySelectorAll('span[uk-pagination-previous]')
-      const next = this.$el.querySelectorAll('span[uk-pagination-next]')
+    updatePrevNextState () {
+      const prev = toArray(this.$el.querySelectorAll('span[uk-pagination-previous]'))
+      const next = toArray(this.$el.querySelectorAll('span[uk-pagination-next]'))
 
       // add/remove disabled classes
       this.prevPage < 1

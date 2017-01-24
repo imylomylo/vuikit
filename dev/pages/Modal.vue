@@ -49,15 +49,7 @@
       @clickOut="show.def = false"
       @inactive="show.def = false"
       @keyEsc="show.def = false">
-      <vk-modal-close @click="show.def = false" />
-      <vk-modal-body>
-        <h2 class="uk-modal-title">Headline</h2>
-        <p>{{ lorem }}</p>
-        <p class="uk-text-right">
-          <vk-button class="uk-button-default" @click="show.def = false">Cancel</vk-button>
-          <vk-button class="uk-button-primary">Save</vk-button>
-        </p>
-      </vk-modal-body>
+      <vk-modal-body>{{ lorem }}</vk-modal-body>
     </vk-modal>
 
     <vk-modal

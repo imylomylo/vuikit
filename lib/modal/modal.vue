@@ -59,9 +59,11 @@ export default {
     }
   },
   computed: {
+    // if dialog is passed as slot is considered overriden
     dialogIsOverriden () {
-      // if dialog is passed as slot is considered overriden
-      return this.$slots.default[0] && this.$slots.default[0].data.staticClass === 'uk-modal-dialog'
+      return this.$slots.default[0] &&
+        this.$slots.default[0].data &&
+        this.$slots.default[0].data.staticClass === 'uk-modal-dialog'
     }
   },
   mounted () {
@@ -76,7 +78,7 @@ export default {
     this.$refs.close = this.$el.querySelector('button.uk-close')
 
     // place close-top outside the dialog
-    if (hasClass(this.$refs.close, 'vk-modal-close-top')) {
+    if (this.$refs.close && hasClass(this.$refs.close, 'vk-modal-close-top')) {
       removeClass(this.$refs.close, 'vk-modal-close-top')
       const bar = document.createElement('div')
       addClass(bar, 'uk-modal-bar')
