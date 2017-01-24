@@ -95,15 +95,7 @@ function isObject (obj) {
   return obj !== null && typeof obj === 'object'
 }
 
-/**
- * Strict object type check. Only returns true
- * for plain JavaScript objects.
- */
-var toString$1 = Object.prototype.toString;
-var OBJECT_STRING = '[object Object]';
-function isPlainObject (obj) {
-  return toString$1.call(obj) === OBJECT_STRING
-}
+
 
 /**
  * Check if value is plain string
@@ -185,29 +177,7 @@ function each (obj, iterator) {
   return obj
 }
 
-function merge (target) {
-  var args = Array.prototype.slice.call(arguments, 1);
-  args.forEach(function (source) {
-    _merge(target, source, true);
-  });
-  return target
-}
 
-function _merge (target, source, deep) {
-  for (var key in source) {
-    if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
-      if (isPlainObject(source[key]) && !isPlainObject(target[key])) {
-        target[key] = {};
-      }
-      if (isArray(source[key]) && !isArray(target[key])) {
-        target[key] = [];
-      }
-      _merge(target[key], source[key], deep);
-    } else if (source[key] !== undefined) {
-      target[key] = source[key];
-    }
-  }
-}
 
 /**
  * Warn about errors only in no production
@@ -4802,9 +4772,11 @@ var Modal = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_v
     }
   },
   computed: {
+    // if dialog is passed as slot is considered overriden
     dialogIsOverriden: function dialogIsOverriden () {
-      // if dialog is passed as slot is considered overriden
-      return this.$slots.default[0] && this.$slots.default[0].data.staticClass === 'uk-modal-dialog'
+      return this.$slots.default[0] &&
+        this.$slots.default[0].data &&
+        this.$slots.default[0].data.staticClass === 'uk-modal-dialog'
     }
   },
   mounted: function mounted () {
@@ -4821,7 +4793,7 @@ var Modal = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_v
     this.$refs.close = this.$el.querySelector('button.uk-close');
 
     // place close-top outside the dialog
-    if (hasClass(this.$refs.close, 'vk-modal-close-top')) {
+    if (this.$refs.close && hasClass(this.$refs.close, 'vk-modal-close-top')) {
       removeClass(this.$refs.close, 'vk-modal-close-top');
       var bar = document.createElement('div');
       addClass(bar, 'uk-modal-bar');
@@ -5216,7 +5188,7 @@ var Pagination = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
     activePage: {
       get: function get () {
         var activeEl = this.$el.querySelector('li.uk-active');
-        return this.active || activeEl && parseInt(activeEl.innerText.trim())
+        return this.active || (activeEl && activeEl.innerText) && parseInt(activeEl.innerText.trim())
       },
       cache: false
     },
@@ -5236,7 +5208,7 @@ var Pagination = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
       var activeEl = this.$el.querySelector('li.uk-active');
       if (activeEl) {
         return toArray(this.$el.querySelectorAll('a'))
-          .filter(function (el) { return !el.querySelector('span'); })
+          .filter(function (el) { return !el.querySelector('span') && el.innerText; })
           .map(function (el) { return parseInt(el.innerText.trim()); })
       } else {
         return paginationMatrix({ active: this.active, total: this.total, limit: this.limit })
@@ -5247,10 +5219,10 @@ var Pagination = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
     }
   },
   updated: function updated () {
-    this.setPrevNextState();
+    this.updatePrevNextState();
   },
   mounted: function mounted () {
-    this.setPrevNextState();
+    this.updatePrevNextState();
     // warn about missing props if 'vk-pagination-pages' is missing
     var activeEl = this.$el.querySelector('li.uk-active');
     if (warn && !activeEl && (!this.limit || !this.active || !this.total)) {
@@ -5263,9 +5235,9 @@ var Pagination = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
      * is the context and not the usual parent, we don't have the expected
      * parent/child relation. Thus, forced to do this kind of workarounds
      */
-    setPrevNextState: function setPrevNextState () {
-      var prev = this.$el.querySelectorAll('span[uk-pagination-previous]');
-      var next = this.$el.querySelectorAll('span[uk-pagination-next]');
+    updatePrevNextState: function updatePrevNextState () {
+      var prev = toArray(this.$el.querySelectorAll('span[uk-pagination-previous]'));
+      var next = toArray(this.$el.querySelectorAll('span[uk-pagination-next]'));
 
       // add/remove disabled classes
       this.prevPage < 1
@@ -5617,21 +5589,23 @@ var Checkbox = {
     var data = ref.data;
     var props = ref.props;
 
-    return h('input', merge(data, {
-      staticClass: 'uk-checkbox',
-      attrs: {
-        type: 'checkbox'
-      },
-      domProps: {
-        checked: props.checked
-      },
-      on: merge(data.on, {
-        change: function (e) {
-          // ensures checked state consistency
-          e.target.checked = props.checked;
-        }
-      })
-    }))
+    return h('input', Object.assign({}, data,
+      {
+        staticClass: 'uk-checkbox',
+        attrs: {
+          type: 'checkbox'
+        },
+        domProps: {
+          checked: props.checked
+        },
+        on: Object.assign({}, data.on,
+          {
+            change: function (e) {
+              // ensures checked state consistency
+              e.target.checked = props.checked;
+            }
+          })
+      }))
   }
 };
 
