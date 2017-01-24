@@ -40,9 +40,12 @@ app.use(devMiddleware)
 // compilation error display
 app.use(hotMiddleware)
 
+// serve static content
+app.use('/static', express.static(path.resolve(__dirname, './static')))
+
 // serve pure static assets
-app.use('/assets', express.static(path.resolve(__dirname, '../node_modules/vuikit-theme/dist')))
 app.use('/assets', express.static(path.resolve(__dirname, '../node_modules/uikit/dist')))
+app.use('/assets/js', express.static(path.resolve(__dirname, '../node_modules/uikit/node_modules/jquery/dist')))
 
 module.exports = app.listen(port, function (err) {
   if (err) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-container">
+  <div class="uk-container uk-margin-bottom">
     <select class="uk-select uk-form-width-small"
       style="margin: 20px 20px 20px 0px;"
       v-model="component"

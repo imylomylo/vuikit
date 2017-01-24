@@ -2,20 +2,17 @@
   <div :class="{
     'uk-flex uk-flex-column-reverse': bottom
   }">
-    <div :class="{
-      'uk-tab-center': center,
-      'uk-tab-center-bottom': center && bottom
+    <ul class="uk-tab" :class="{
+      [`uk-child-width-1-${tabs.length}`]: alignment === 'justify',
+      'uk-flex-right': alignment === 'right',
+      'uk-flex-center': alignment === 'center',
+      'uk-tab-bottom': bottom
     }">
-      <ul class="uk-tab" :class="{
-        'uk-tab-grid': width,
-        'uk-tab-flip': flip,
-        'uk-tab-bottom': bottom
-      }">
-        <slot />
-      </ul>
-    </div>
+      <slot />
+    </ul>
     <transition :name="transition" mode="out-in">
       <div class="uk-margin" :key="activeTab">
+        <tabcontent />
       </div>
     </transition>
   </div>
@@ -23,34 +20,19 @@
 
 <script>
 import core from './core'
-import tabcontent from './tabcontent'
 
 export default {
   name: 'VkTabs',
   extends: core,
-  components: {
-    tabcontent
-  },
   props: {
-    // tabs width using UIkit grid
-    width: {
+    alignment: {
       type: String,
-      default: ''
-    }
-  },
-  beforeMount () {
-    this.updateTabs()
-  },
-  beforeUpdate () {
-    this.updateTabs()
-  },
-  methods: {
-    updateTabs () {
-      this.$slots.default.filter(c => c.tag).forEach((tab, index) => {
-        if (this.width) {
-          tab.data.staticClass = `uk-width-${this.width}`
-        }
-      })
+      default: 'left' // left|right|center|justify
+    },
+    // flips the tabs vertically
+    bottom: {
+      type: Boolean,
+      default: false
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <ul class="uk-subnav" :class="{
-    'uk-subnav-line': line,
+    'uk-subnav-divider': divider,
     'uk-subnav-pill': pill
   }">
     <slot />
@@ -12,7 +12,7 @@ export default {
   name: 'VkSubnav',
   props: {
     activeItem: [String, Number],
-    line: {
+    divider: {
       type: Boolean,
       default: false
     },
