@@ -1,7 +1,5 @@
-const vue = require('rollup-plugin-vue')
 const path = require('path')
-const babelrc = require('babelrc-rollup')
-// const babel = require('rollup-plugin-babel')
+const vue = require('rollup-plugin-vue')
 const buble = require('rollup-plugin-buble')
 const commonjs = require('rollup-plugin-commonjs')
 const replace = require('rollup-plugin-replace')
@@ -41,30 +39,40 @@ const builds = {
     entry: path.resolve(__dirname, '../lib/index.js'),
     dest: path.resolve(__dirname, '../dist/vuikit.min.js'),
     format: 'umd',
-    env: 'production'
+    env: 'production',
+    sourceMap: true
   }
 }
 
 function genConfig (opts) {
   const config = {
+    moduleName: 'Vuikit',
+    banner,
+    sourceMap: opts.sourceMap,
     entry: opts.entry,
     dest: opts.dest,
     external: opts.external,
     format: opts.format,
-    banner: banner,
-    moduleName: 'Vuikit',
-    sourceMap: true,
     plugins: [
-      nodeResolve({
-        extensions: [ '.js', '.json', '.vue' ]
-      }),
       alias(Object.assign({
         resolve: ['.jsx', '.js']
       }, require('./alias'), opts.alias)),
-      commonjs(),
-      vue(),
-      // babel(babelrc.default())
-      buble(babelrc.default())
+      nodeResolve({
+        extensions: [ '.js', '.json', '.vue' ]
+      }),
+      vue({
+        compileTemplate: true
+      }),
+      buble({
+        objectAssign: 'Object.assign',
+        jsx: 'h'
+      }),
+      nodeResolve({
+        jsnext: true,
+        main: true,
+        browser: true
+      }),
+      commonjs()
     ]
   }
 

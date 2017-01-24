@@ -44,8 +44,7 @@ function buildEntry (config) {
   const isProd = /min\.js$/.test(config.dest)
   return rollup.rollup(config).then(bundle => {
     const { code, map } = bundle.generate(config)
-    console.log(config.dest)
-    writeSourceMap(config.dest, map)
+
     if (isProd) {
       var minified = (config.banner ? config.banner + '\n' : '') + uglify.minify(code, {
         fromString: true,
@@ -57,9 +56,9 @@ function buildEntry (config) {
           pure_funcs: ['makeMap']
         }
       }).code
-      return write(config.dest, minified, true)
+      return write(config.dest, minified, map, true)
     } else {
-      return write(config.dest, code)
+      return write(config.dest, code, map)
     }
   })
 }
@@ -73,14 +72,19 @@ function writeSourceMap (dest, map) {
   })
 }
 
-function write (dest, code, zip) {
+function write (dest, code, map, zip) {
   return new Promise((resolve, reject) => {
     function report (extra) {
       console.log(blue(path.relative(process.cwd(), dest)) + ' ' + getSize(code) + (extra || ''))
       resolve()
     }
 
-    fs.writeFile(dest, code + `\n//# sourceMappingURL=${dest}`, err => {
+    if (map) {
+      writeSourceMap(dest, map)
+      code += `\n//# sourceMappingURL=${path.basename(dest)}.map`
+    }
+
+    fs.writeFile(dest, code, err => {
       if (err) return reject(err)
       if (zip) {
         zlib.gzip(code, (err, zipped) => {
