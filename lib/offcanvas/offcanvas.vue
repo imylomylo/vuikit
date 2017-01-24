@@ -2,10 +2,10 @@
   <transition
     enter-to-class="uk-open"
     leave-active-class="uk-offcanvas-bar-animation"
-    @beforeEnter="beforeEnter"
-    @afterEnter="afterEnter"
-    @beforeLeave="beforeLeave"
-    @afterLeave="afterLeave">
+    @before-enter="beforeEnter"
+    @after-enter="afterEnter"
+    @before-leave="beforeLeave"
+    @after-leave="afterLeave">
     <div v-show="show"
       class="uk-offcanvas"
       style="display: block;">

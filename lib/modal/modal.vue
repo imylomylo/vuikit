@@ -2,9 +2,9 @@
   <transition
     enter-to-class="uk-open"
     leave-class="uk-open"
-    @beforeEnter="beforeEnter"
-    @afterEnter="afterEnter"
-    @afterLeave="afterLeave">
+    @before-enter="beforeEnter"
+    @after-enter="afterEnter"
+    @after-leave="afterLeave">
     <div class="uk-modal"
       v-show="show"
       style="display: block;"
@@ -13,7 +13,7 @@
         'uk-modal-container': container,
         'uk-modal-full': full
       }">
-        <modal-content />
+        <modal-content></modal-content>
     </div>
   </transition>
 </template>

@@ -3,7 +3,7 @@
     'uk-subnav-divider': divider,
     'uk-subnav-pill': pill
   }">
-    <slot />
+    <slot></slot>
   </ul>
 </template>
 

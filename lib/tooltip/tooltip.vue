@@ -2,9 +2,9 @@
   <transition
     :enter-active-class="enterActiveClass"
     :leave-active-class="leaveActiveClass"
-    @afterLeave="remove">
+    @after-leave="remove">
     <div v-show="active" class="uk-tooltip" style="display: block;">
-      <div class="uk-tooltip-inner" v-text="content" />
+      <div class="uk-tooltip-inner" v-text="content"></div>
     </div>
   </transition>
 </template>

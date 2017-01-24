@@ -4,7 +4,7 @@
     :enter-active-class="enterActiveClass"
     :leave-active-class="leaveActiveClass"
     leave-class="uk-open"
-    @afterEnter="afterEnter">
+    @after-enter="afterEnter">
     <div v-show="show" class="uk-dropdown" style="display: block;">
       <slot></slot>
     </div>

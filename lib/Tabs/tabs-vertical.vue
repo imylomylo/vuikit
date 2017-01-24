@@ -7,13 +7,13 @@
         ? 'uk-tab-right'
         : 'uk-tab-left'
       ]">
-        <slot />
+        <slot></slot>
       </ul>
     </div>
     <div class="uk-width-expand">
       <transition :name="transition" mode="out-in">
         <div :key="activeTab">
-          <tabcontent />
+          <tabcontent></tabcontent>
         </div>
       </transition>
     </div>

@@ -8,11 +8,11 @@
       'uk-flex-center': alignment === 'center',
       'uk-tab-bottom': bottom
     }">
-      <slot />
+      <slot></slot>
     </ul>
     <transition :name="transition" mode="out-in">
       <div class="uk-margin" :key="activeTab">
-        <tabcontent />
+        <tabcontent></tabcontent>
       </div>
     </transition>
   </div>

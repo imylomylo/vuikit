@@ -9,7 +9,7 @@
         v-show="isMonthDisplayable(nextMonth)"
         @click.prevent="triggerChangeEvent(nextMonth)">
       </a>
-      <PickerHeader></PickerHeader>
+      <picker-header></picker-header>
     </div>
     <table class="uk-datepicker-table">
       <thead>
