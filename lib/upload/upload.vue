@@ -18,7 +18,7 @@ export default {
     dragged: false
   }),
   methods: {
-    dropped: e => {
+    dropped (e) {
       if (e.dataTransfer && e.dataTransfer.files) {
         e.stopPropagation()
         e.preventDefault()
