@@ -1,38 +1,16 @@
 exports[`Modal renders correctly 1`] = `
-Object {
-  "child": Array [
-    Object {
-      "attr": Object {
-        "class": "uk-modal",
-        "style": Array [
-          "display:",
-          "block;",
-        ],
-      },
-      "child": Array [
-        Object {
-          "attr": Object {
-            "class": Array [
-              "uk-modal-dialog",
-              "uk-modal-dialog-large",
-              "uk-modal-dialog-lightbox",
-              "uk-modal-dialog-blank",
-            ],
-          },
-          "child": Array [
-            Object {
-              "node": "text",
-              "text": "Modal",
-            },
-          ],
-          "node": "element",
-          "tag": "div",
-        },
-      ],
-      "node": "element",
-      "tag": "div",
-    },
-  ],
-  "node": "root",
-}
+"html
+  body
+    .uk-modal.uk-open(style=\'display: block;\')
+      .uk-modal-dialog
+        button.uk-close.uk-icon.uk-modal-close-default(type=\'button\', uk-close=\'true\')
+        |  
+        .uk-modal-header
+          h2.uk-modal-title Headline
+        |  
+        .uk-modal-body Content
+        |  
+        .uk-modal-footer.uk-text-right
+          | Footer
+"
 `;
