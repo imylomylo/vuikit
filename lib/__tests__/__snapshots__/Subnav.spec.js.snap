@@ -1,0 +1,85 @@
+exports[`Subnav renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": Array [
+          "uk-subnav",
+          "uk-subnav-line",
+          "uk-subnav-pill",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Item1",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-disabled",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Item2",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Item3",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;

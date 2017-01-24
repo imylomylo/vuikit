@@ -1,0 +1,38 @@
+exports[`Modal renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-modal",
+        "style": Array [
+          "display:",
+          "block;",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-modal-dialog",
+              "uk-modal-dialog-large",
+              "uk-modal-dialog-lightbox",
+              "uk-modal-dialog-blank",
+            ],
+          },
+          "child": Array [
+            Object {
+              "node": "text",
+              "text": "Modal",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
+        },
+      ],
+      "node": "element",
+      "tag": "div",
+    },
+  ],
+  "node": "root",
+}
+`;

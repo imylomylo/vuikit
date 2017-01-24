@@ -1,0 +1,69 @@
+exports[`ButtonRadio renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-button-group",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-button",
+              "uk-active",
+            ],
+            "type": "button",
+          },
+          "child": Array [
+            Object {
+              "node": "text",
+              "text": "Button1",
+            },
+          ],
+          "node": "element",
+          "tag": "button",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-button",
+            "type": "button",
+          },
+          "child": Array [
+            Object {
+              "node": "text",
+              "text": "Button2",
+            },
+          ],
+          "node": "element",
+          "tag": "button",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-button",
+            "type": "button",
+          },
+          "child": Array [
+            Object {
+              "node": "text",
+              "text": "Button3",
+            },
+          ],
+          "node": "element",
+          "tag": "button",
+        },
+      ],
+      "node": "element",
+      "tag": "div",
+    },
+  ],
+  "node": "root",
+}
+`;

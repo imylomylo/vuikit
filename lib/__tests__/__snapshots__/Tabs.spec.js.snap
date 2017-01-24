@@ -1,0 +1,205 @@
+exports[`Tabs renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": Array [
+          "uk-flex",
+          "uk-flex-column-reverse",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-tab-center",
+              "uk-tab-center-bottom",
+            ],
+          },
+          "child": Array [
+            Object {
+              "attr": Object {
+                "class": Array [
+                  "uk-tab",
+                  "uk-tab-grid",
+                  "uk-tab-flip",
+                  "uk-tab-bottom",
+                ],
+              },
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "uk-width-1-1",
+                      "uk-active",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Tab1",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "a",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "li",
+                },
+                Object {
+                  "node": "text",
+                  "text": "",
+                },
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "uk-width-1-1",
+                      "uk-disabled",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Tab2",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "a",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "li",
+                },
+                Object {
+                  "node": "text",
+                  "text": "",
+                },
+                Object {
+                  "attr": Object {
+                    "class": "uk-width-1-1",
+                  },
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Headerfromslot",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "a",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "li",
+                },
+              ],
+              "node": "element",
+              "tag": "ul",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-margin",
+          },
+          "node": "element",
+          "tag": "div",
+        },
+      ],
+      "node": "element",
+      "tag": "div",
+    },
+  ],
+  "node": "root",
+}
+`;
+
+exports[`Tabs renders correctly verticaly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": Array [
+          "uk-grid",
+          "uk-flex",
+          "uk-flex-row-reverse",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-width-medium-1-1",
+          },
+          "child": Array [
+            Object {
+              "attr": Object {
+                "class": Array [
+                  "uk-tab",
+                  "uk-tab-right",
+                ],
+              },
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-active",
+                  },
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "a",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "li",
+                },
+              ],
+              "node": "element",
+              "tag": "ul",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-width-medium-1-2",
+          },
+          "child": Array [
+            Object {
+              "node": "element",
+              "tag": "div",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
+        },
+      ],
+      "node": "element",
+      "tag": "div",
+    },
+  ],
+  "node": "root",
+}
+`;

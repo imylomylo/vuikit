@@ -1,0 +1,11 @@
+exports[`Tooltip renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "node": "element",
+      "tag": "button",
+    },
+  ],
+  "node": "root",
+}
+`;

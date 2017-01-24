@@ -1,0 +1,1329 @@
+exports[`Pagination renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": Array [
+          "uk-pagination",
+          "uk-pagination-left",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-disabled",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "node": "comment",
+          "text": "",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "1",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "2",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "3",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "4",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "5",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "20",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;
+
+exports[`Pagination renders correctly 2`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-pagination",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-pagination-previous",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-left",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-left",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "1",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "8",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "9",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "10",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "11",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "12",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "20",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-pagination-next",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;
+
+exports[`Pagination renders correctly 3`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-pagination",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-pagination-previous",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-left",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-left",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "1",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "16",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "17",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "18",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "19",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "20",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "node": "comment",
+          "text": "",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-disabled",
+              "uk-pagination-next",
+            ],
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;
+
+exports[`Pagination renders correctly 4`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-pagination",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-disabled",
+              "uk-pagination-previous",
+            ],
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "node": "comment",
+          "text": "",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "1",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "2",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "3",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "4",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "5",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "6",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "7",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "20",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-pagination-next",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;
+
+exports[`Pagination renders correctly 5`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-pagination",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": Array [
+              "uk-disabled",
+              "uk-pagination-previous",
+            ],
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "node": "comment",
+          "text": "",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "1",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "2",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "3",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "4",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "5",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "...",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "100",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-pagination-next",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-icon-angle-double-right",
+                  },
+                  "node": "element",
+                  "tag": "i",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;

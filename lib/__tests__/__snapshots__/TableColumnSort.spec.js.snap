@@ -1,0 +1,137 @@
+exports[`Table Column Sort renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-table",
+      },
+      "child": Array [
+        Object {
+          "node": "element",
+          "tag": "col",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myHeaderClass",
+                      "uk-visible-hover-inline",
+                      "vk-table-order",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "class": "uk-position-relative",
+                      },
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": Array [
+                              "uk-icon-justify",
+                              "uk-margin-small-left",
+                              "uk-invisible",
+                              "vk-icon-arrow-down",
+                            ],
+                          },
+                          "node": "element",
+                          "tag": "i",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "span",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "th",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "thead",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "myCellClass",
+                  },
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "myCellClass",
+                  },
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "myCellClass",
+                  },
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "myCellClass",
+                  },
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "myCellClass",
+                  },
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "tbody",
+        },
+      ],
+      "node": "element",
+      "tag": "table",
+    },
+  ],
+  "node": "root",
+}
+`;

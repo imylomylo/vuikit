@@ -1,0 +1,194 @@
+exports[`Table Column Select renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-table",
+      },
+      "child": Array [
+        Object {
+          "node": "element",
+          "tag": "col",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myHeaderClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "th",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "thead",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myCellClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myCellClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myCellClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myCellClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": Array [
+                      "myCellClass",
+                      "uk-form",
+                      "uk-text-center",
+                      "vk-table-width-minimum",
+                    ],
+                  },
+                  "child": Array [
+                    Object {
+                      "attr": Object {
+                        "type": "checkbox",
+                      },
+                      "node": "element",
+                      "tag": "input",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "td",
+                },
+              ],
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "tbody",
+        },
+      ],
+      "node": "element",
+      "tag": "table",
+    },
+  ],
+  "node": "root",
+}
+`;

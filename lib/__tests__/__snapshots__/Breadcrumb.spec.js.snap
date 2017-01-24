@@ -1,0 +1,104 @@
+exports[`Breadcrumb renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": "uk-breadcrumb",
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Home",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-active",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Blog",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Category",
+                },
+              ],
+              "node": "element",
+              "tag": "a",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "node": "text",
+                  "text": "Post",
+                },
+              ],
+              "node": "element",
+              "tag": "span",
+            },
+          ],
+          "node": "element",
+          "tag": "li",
+        },
+      ],
+      "node": "element",
+      "tag": "ul",
+    },
+  ],
+  "node": "root",
+}
+`;

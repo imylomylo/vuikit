@@ -1,0 +1,28 @@
+exports[`Button renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "class": Array [
+          "uk-button",
+          "uk-active",
+          "uk-button-primary",
+          "uk-button-mini",
+          "uk-width-1-1",
+        ],
+        "disabled": "disabled",
+        "type": "submit",
+      },
+      "child": Array [
+        Object {
+          "node": "text",
+          "text": "Button",
+        },
+      ],
+      "node": "element",
+      "tag": "button",
+    },
+  ],
+  "node": "root",
+}
+`;
